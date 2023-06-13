@@ -1,0 +1,18 @@
+CREATE TABLE clothing_store (ID integer primary key, item text, category text, price integer, popularity integer); 
+
+INSERT into clothing_store VALUES(1,'dresses', 'clothing', '15.99', 3); 
+INSERT into clothing_store VALUES(2, 'swimwear', 'clothing', '20.99', 2); 
+INSERT into clothing_store VALUES(3, 'earrings', 'jewelry', '8.99', 4); 
+INSERT into clothing_store VALUES(4, 'necklaces', 'jewelry', '7.99', 5); 
+INSERT into clothing_store VALUES(5, 'rompers', 'clothing', '18.99', 1); 
+INSERT into clothing_store VALUES(6, 'skirts', 'clothing', '14.99', 6); 
+INSERT into clothing_store VALUES(7, 'shorts', 'clothing', '13.99', 8); 
+INSERT into clothing_store VALUES(8, 'jumpsuits', 'clothing', '16.99', 12); 
+INSERT into clothing_store VALUES(9, 'tops', 'clothing', '14.99', 7); 
+INSERT into clothing_store VALUES(10, 'jackets', 'clothing', '21.99', 13); 
+INSERT into clothing_store VALUES(11, 'sunglasses', 'accessories', '17.99', 14); 
+INSERT into clothing_store VALUES(12, 'bags & wallets', 'accessories', '24.99', 9); 
+
+SELECT*FROM clothing_store ORDER BY price desc;
+
+SELECT AVG(price) "avg clothing item price" FROM Clothing_store WHERE category='clothing'; 
